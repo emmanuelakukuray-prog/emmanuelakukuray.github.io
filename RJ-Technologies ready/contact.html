@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact RJ-Technologies to discuss technology services, project needs and support.">
+    <title>RJ-Technologies | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js" defer></script>
+    <script src="contact.js" defer></script>
+  </head>
+
+  <body>
+    
+    <!-- Header & Navigation -->
+    <header>
+      <a class="logo" href="home.html" aria-label="RJ-Technologies home"><img src="RJ-Technologies-19.png" alt="RJ-Technologies"
+        width="64" height="64">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="primary-navigation" aria-label="Main navigation">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </header>
+
+    <!-- contact form section -->
+    <section id="contact">
+      <h2>We'd love to hear from you</h2>
+      <p>Questions about a product or service? Send us a note and our team will
+        be happy to help.
+      </p>
+
+      <p id="form-status" class="form-status" role="status" aria-live="polite" tabindex="-1" hidden></p>
+
+      <form id="contact-form" action="/contact" method="post">
+        <!-- Name and Email -->
+        <input type="text" name="FName" placeholder="First name" aria-label="First name" autocomplete="given-name" required>
+        <input type="text" name="LName" placeholder="Last name" aria-label="Last name" autocomplete="family-name" required>
+        <input type="email" name="email" placeholder="Your email" aria-label="Your email" autocomplete="email" required>
+                
+        <!-- Phone and Company/business -->
+        <input type="tel" name="phone" placeholder="Enter phone number" aria-label="Phone number" autocomplete="tel" required>
+        <input type="text" name="company/business" placeholder="Enter company/business name" aria-label="Company or business name" autocomplete="organization" required>
+                  
+        <!-- Service Dropdown -->
+        <label for="service">
+          <select name="service" id="service" required>
+            <option value="" disabled selected>Select a service...</option>
+            <option value="web-development">Web Development</option>
+            <option value="mobile-applications-and-development">Mobile Applications and Development</option>
+            <option value="automation-systems">Automation Systems</option>
+            <option value="networking">Network Installation</option>
+            <option value="innovation-and-adaptability">Innovation and Adaptability</option>
+            <option value="cyber-security"> Cyber Security</option>
+            <option value="cloud-solutions">Cloud Services</option>
+            <option value="ui-ux-design">UI/UX Design</option>
+            <option value="consulting">IT Consulting</option>
+          </select>
+        </label>
+               
+        <!-- Project Details -->
+        <textarea name="message" placeholder="Please provide details about your timelines, goals and specific features needed..." aria-label="Project details" required></textarea>
+        <div class="contact-honeypot" aria-hidden="true">
+          <label for="company-website">Leave this field empty</label>
+          <input type="text" id="company-website" name="company_website" tabindex="-1" autocomplete="off">
+        </div>
+        <button type="submit" class="button">Send Message</button>
+      </form>
+
+      <!-- mailto -->
+      <div class="contact-link">
+        <a href="mailto:info@rjtechnologies.com">Email: info@rjtechnologies.com</a>
+      </div>
+      <div class="contact-link">
+        <a href="tel:+211922666205">Phone: (+211) 922-666-205 | (+256) 790-555-986</a>
+      </div>
+       <div class="contact-link">
+        <a href="whatsapp:+211922666205">WhatsApp: (+211) 922-666-205 | (+256) 790-555-986</a>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="home.html" aria-label="RJ-Technologies home"><img src="RJ-Technologies-19.png"
+            alt="RJ-Technologies" width="60" height="60"></a>
+          <p>RJ-Technologies <br> Your Gateway To Digital Excellence.</p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <nav class="footer-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+
+        <div>
+          <h3>Customer Care</h3>
+          <nav class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+          </nav>
+        </div>
+
+        <div>
+          <h3>Get in Touch</h3>
+          <nav class="footer-links">
+            <span>Location: Nimule-South Sudan</span>
+            <a href="mailto:info@rjtechnologies.com">Email: info@rjtechnologies.com</a>
+            <a href="tel:+211922666205">Phone: (+211) 922-666-205 | +256 790-555-986</a>
+          </nav>
+        </div>
+      </div>
+      <div class="copyright">©2026 RJ-Technologies. All rights reserved.</div>
+    </footer>
+  </body>
+</html>
